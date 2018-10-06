@@ -1,4 +1,5 @@
-const messages = (state = [], action){
+import * as types from '../constants/ActionTypes'
+const messages = (state = [], action)=>{
     switch (action.type) {
         case 'ADD_MESSAGE':
         case 'MESSAGE_RECIEVED':
