@@ -8,9 +8,9 @@ const Message = (message,author) => {
     </p>
 }
 
-Message.propTypes = {
+Message.PropTypes = {
     message: Proptypes.string.isRequired,
     author: Proptypes.string.isRequired
 }
 
-export default AddMessage
+export default Message
