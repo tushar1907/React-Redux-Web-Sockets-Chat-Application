@@ -14,3 +14,14 @@ const Sidebar = ({ users }) => (
     </aside>
 )
 
+Sidebar.PropTypes = {
+    messages: Proptypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            name: PropTypes.string.isRequired,
+        }).isRequired
+    ).isRequired
+}
+
+export default Sidebar;
+
