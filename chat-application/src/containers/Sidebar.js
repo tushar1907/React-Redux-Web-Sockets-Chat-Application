@@ -5,5 +5,5 @@ import { addMessage } from '../actions'
 
 
 export const Sidebar = connect(state=>({
-    users: state.user
-}),mapDispatchToProps)(SidebarComponent); 
+    users: state.users
+}),{})(SidebarComponent); 
