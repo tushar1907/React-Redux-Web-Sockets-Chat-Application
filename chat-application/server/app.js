@@ -45,12 +45,11 @@ wss.on('connection',ws=>{
                 
          }
      })
-     ws.on('close',()=>{
-        users.splice(index,1){
-            broadcast({
-                type: 'USERS_LIST',
-                users
-            },ws)
-        }
-     })
+     ws.on('close', () => {
+		users.splice(index, 1)
+		broadcast({
+			type: 'USERS_LIST',
+			users
+		}, ws)
+	})
 })
